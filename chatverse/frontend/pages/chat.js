@@ -3,10 +3,10 @@ import { useRouter } from 'next/router';
 import Head from 'next/head';
 import io from 'socket.io-client';
 import { motion, AnimatePresence } from 'framer-motion';
-import MessageBubble from '@/components/MessageBubble';
-import Sidebar from '@/components/Sidebar';
-import UserPanel from '@/components/UserPanel';
-import TypingIndicator from '@/components/TypingIndicator';
+import MessageBubble from '../components/MessageBubble'
+import Sidebar from '../components/Sidebar'
+import UserPanel from '../components/UserPanel'
+import TypingIndicator from '../components/TypingIndicator'
 
 const SOCKET_URL = process.env.NEXT_PUBLIC_SOCKET_URL || 'http://localhost:3001';
 
